@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+  margin: 0%;
+}
+
+.background-red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 975px;
+  width: 1268px;
+  background-color: red;
+}
+
+.header {
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: gold;
+  font-family: monospace;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.background-grey {
+  display: flex;
+  height: 640px;
+  width: 640px;
+  background-color: grey;
+  border: 8px solid gold;
+  border-radius: 10px;
+}
+
+.interface-container {
+  height: 160px;
+  width: 800px;
+  margin-top: 30px;
+  background-color: blueviolet;
+}
