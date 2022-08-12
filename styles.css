@@ -44,8 +44,25 @@ body {
 }
 
 .interface-container {
+  display: flex;
+  justify-content: center;
   height: 160px;
-  width: 800px;
-  margin-top: 30px;
+  width: 640px;
+  margin-top: 26px;
   background-color: blueviolet;
+}
+
+.grid-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  font-size: 14px;
+  height: 34px;
+  width: 92px;
+  border: 3px solid gold;
+  border-radius: 7px;
 }
