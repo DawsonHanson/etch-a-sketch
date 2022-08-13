@@ -106,6 +106,12 @@ body {
   border: 1px solid black;
 }
 
+.square-random {
+  /* place holder for random color function */
+  background-color: blueviolet;
+  border: 1px solid black;
+}
+
 .interface-container {
   display: flex;
   flex-wrap: wrap;
