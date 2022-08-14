@@ -5,8 +5,15 @@
 body {
   display: flex;
   justify-content: center;
+  /* image from https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_960_720.jpg */
+  background: url(./astronomy.png) center no-repeat;
+  background-size: cover;
   padding: 0%;
   margin: 0%;
+}
+
+.push-top {
+  margin-top: 14px;
 }
 
 .background-red {
@@ -14,18 +21,27 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 975px;
-  width: 1268px;
+  height: 946px;
+  width: 1050px;
   background-color: red;
+  border-radius: 20px;
 }
 
-.header {
-  margin-bottom: 14px;
+.header-top, .header {
+  
   font-size: 30px;
   color: gold;
   font-family: monospace;
   font-style: italic;
   font-weight: bolder;
+}
+
+.header-top {
+  margin-bottom: 6px;
+}
+
+.header {
+  margin-bottom: 14px;
 }
 
 .grid-button {
@@ -166,6 +182,7 @@ body {
 }
 
 .button-random {
-  /* place holder for background image */
-  background-color: blueviolet;
+  /* image from https://cdn.pixabay.com/photo/2014/04/04/14/56/background-313415__340.jpg */
+  background: url(./background.png) center;
+  background-size: 80px 200px;
 }
