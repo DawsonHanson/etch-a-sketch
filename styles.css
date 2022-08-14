@@ -122,9 +122,12 @@ body {
   border: 1px solid black;
 }
 
+:root {
+  --color: 
+}
+
 .square-random {
-  /* place holder for random color function */
-  background-color: blueviolet;
+  background-color: var(--color);
   border: 1px solid black;
 }
 
@@ -143,6 +146,10 @@ body {
   margin-bottom: 14px;
   border: 3px solid gold;
   border-radius: 7px;
+}
+
+.button-red:hover, .button-orange:hover, .button-yellow:hover, .button-green:hover, .button-blue:hover, .button-indigo:hover, .button-violet:hover, .button-white:hover, .button-black:hover, .button-random:hover {
+border-color: black;
 }
 
 .button-red {

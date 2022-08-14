@@ -35,7 +35,9 @@ const randomButton = document.querySelector('.button-random')
 
 const squares = document.querySelectorAll('.square')
 
-redButton.addEventListener('click', () => {
+redButton.addEventListener('click', red)
+
+function red () {
   squares.forEach(square => {
     square.addEventListener('mouseover', () => {
       square.classList.add('square-red')
@@ -50,9 +52,11 @@ redButton.addEventListener('click', () => {
       square.classList.remove('square-random')
     })
   })
-})
+}
 
-orangeButton.addEventListener('click', () => {
+orangeButton.addEventListener('click', orange)
+
+function orange () {
   squares.forEach(square => {
     square.addEventListener('mouseover', () => {
       square.classList.add('square-orange')
@@ -67,9 +71,11 @@ orangeButton.addEventListener('click', () => {
       square.classList.remove('square-random')
     })
   })
-})
+}
 
-yellowButton.addEventListener('click', () => {
+yellowButton.addEventListener('click', yellow)
+
+function yellow() {
   squares.forEach(square => {
     square.addEventListener('mouseover', () => {
       square.classList.add('square-yellow')
@@ -84,9 +90,11 @@ yellowButton.addEventListener('click', () => {
       square.classList.remove('square-random')
     })
   })
-})
+}
 
-greenButton.addEventListener('click', () => {
+greenButton.addEventListener('click', green)
+
+function green() {
   squares.forEach(square => {
     square.addEventListener('mouseover', () => {
       square.classList.add('square-green')
@@ -101,9 +109,11 @@ greenButton.addEventListener('click', () => {
       square.classList.remove('square-random')
     })
   })
-})
+}
 
-blueButton.addEventListener('click', () => {
+blueButton.addEventListener('click', blue)
+
+function blue () {
   squares.forEach(square => {
     square.addEventListener('mouseover', () => {
       square.classList.add('square-blue')
@@ -118,9 +128,11 @@ blueButton.addEventListener('click', () => {
       square.classList.remove('square-random')
     })
   })
-})
+}
 
-indigoButton.addEventListener('click', () => {
+indigoButton.addEventListener('click', indigo)
+
+function indigo() {
   squares.forEach(square => {
     square.addEventListener('mouseover', () => {
       square.classList.add('square-indigo')
@@ -135,9 +147,11 @@ indigoButton.addEventListener('click', () => {
       square.classList.remove('square-random')
     })
   })
-})
+}
 
-violetButton.addEventListener('click', () => {
+violetButton.addEventListener('click', violet)
+
+function violet() {
   squares.forEach(square => {
     square.addEventListener('mouseover', () => {
       square.classList.add('square-violet')
@@ -152,9 +166,11 @@ violetButton.addEventListener('click', () => {
       square.classList.remove('square-random')
     })
   })
-})
+}
 
-whiteButton.addEventListener('click', () => {
+whiteButton.addEventListener('click', white)
+
+function white() {
   squares.forEach(square => {
     square.addEventListener('mouseover', () => {
       square.classList.add('square')
@@ -169,9 +185,11 @@ whiteButton.addEventListener('click', () => {
       square.classList.remove('square-random')
     })
   })
-})
+}
 
-blackButton.addEventListener('click', () => {
+blackButton.addEventListener('click', black)
+
+function black() {
   squares.forEach(square => {
     square.addEventListener('mouseover', () => {
       square.classList.add('square-black')
@@ -186,10 +204,20 @@ blackButton.addEventListener('click', () => {
       square.classList.remove('square-random')
     })
   })
-})
+}
 
-randomButton.addEventListener('click', () => {
+randomButton.addEventListener('click', random)
+
+function random() {
   squares.forEach(square => {
+    let randomRGB = (min, max) => min + Math.floor(Math.random() * (max - min + 1))
+    let r = randomRGB(0, 255);
+    let g = randomRGB(0, 255);
+    let b = randomRGB(0, 255);
+    let rgb = `rgb(${r},${g},${b})`
+    document.documentElement.style.setProperty('--color', `${rgb}`)
+    console.log (rgb);
+
     square.addEventListener('mouseover', () => {
       square.classList.add('square-random')
       square.classList.remove('square-orange')
@@ -203,4 +231,4 @@ randomButton.addEventListener('click', () => {
       square.classList.remove('square-red')
     })
   })
-})
+}
