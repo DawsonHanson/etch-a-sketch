@@ -1,5 +1,3 @@
-console.log('Test!')
-
 const gridButton = document.querySelector('.grid-button')
 gridButton.addEventListener('click', () => {
   location.reload()
@@ -216,7 +214,6 @@ function random() {
     let b = randomRGB(0, 255);
     let rgb = `rgb(${r},${g},${b})`
     document.documentElement.style.setProperty('--color', `${rgb}`)
-    console.log (rgb);
 
     square.addEventListener('mouseover', () => {
       square.classList.add('square-random')
@@ -231,4 +228,3 @@ function random() {
       square.classList.remove('square-red')
     })
   })
-}
