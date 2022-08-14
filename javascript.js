@@ -228,3 +228,4 @@ function random() {
       square.classList.remove('square-red')
     })
   })
+}
