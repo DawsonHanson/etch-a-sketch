@@ -10,7 +10,7 @@ function createGrid () {
   const sketchPad = document.querySelector('.background-grey')
   const styleValue = Math.sqrt(389376/answer)
   if (answer > 4096) {
-    return prompt('Sorry, choose 64 or lower')
+    return alert('Sorry, choose 64 or lower')
   } 
   for (let x = 1; x <= answer; x++) {
    const square = document.createElement('div')
